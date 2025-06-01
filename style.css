@@ -16,6 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #FEFCFB;
+    
 }
 
 .container {
@@ -30,6 +31,11 @@ header {
     font-size: 28px;
     font-weight: bold;
     gap: 5px;
+    padding: 10px 0px;
+    a{
+        text-decoration: none;
+         color: black;
+    }
 }
 
 .nav-list {
@@ -704,6 +710,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 
 }
 
@@ -714,6 +721,7 @@ header {
 .blog-h1 {
     font-family: "Volkhov", serif;
     font-size: 54px;
+    padding: 30px 0px;
 }
 
 .blog-cards {
@@ -721,6 +729,7 @@ header {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 30px 0px;
 }
 
 .blog-card {
@@ -751,21 +760,38 @@ header {
 
 /* --------------------------------------------------subscribe----------------------------------------------------------- */
 
+.subcribe{
+    position: relative;
+    padding: 20px;
+}
+
+.subcribe-img1 , .subcribe-img2{
+    position: absolute;
+}
+.subcribe-img1{
+    left: 250px;
+    top: 65px;
+}
+.subcribe-img2{
+    right: 255px;
+    top: 25px;
+}
 
 .subscribe-content {
     display: flex;
     justify-self: center;
     background-color: #FA7436;
     flex-direction: column;
-    /* border: solid black 1px; */
+    border-radius: 10px;
     width: 700px;
-    padding: 5px;
+    padding: 50px 100px ;
 
     h1 {
         color: white;
         font-family: "Volkhov", serif;
-        font-size: 48px;
+        font-size: 35px;
         text-align: center;
+        padding: 20px 0px;
     }
 
     .subscribe-btn {
@@ -813,6 +839,7 @@ header {
 
 /*----------------------------------------------- footer ------------------------------------------------------------*/
 
+
 .facebook {
 
     display: block;
@@ -820,7 +847,7 @@ header {
     border-radius: 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     height: 30px;
-    fill: white;
+    /* fill: white; */
     height: 40px;
     width: 40px;
 
@@ -831,7 +858,7 @@ header {
     border-radius: 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: #FA7436;
-    fill: white;
+    /* fill: white; */
     height: 40px;
     width: 40px;
 
@@ -844,12 +871,21 @@ header {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     height: 40px;
     width: 40px;
+    
+}
 
+.facebook:hover,.twitter:hover,.instagram:hover{
+    cursor: pointer;
+    background-color: #FA7436;
+    fill: white;
+    
 }
 
 .social {
     display: flex;
     gap: 10px;
+    padding: 0px 0px 20px;
+
 
 }
 
@@ -864,7 +900,7 @@ header {
             color: #666666;
             font-weight: 500;
             text-align: left;
-
+            padding: 5px 0px 20px;
         }
     }
 
@@ -885,6 +921,10 @@ header {
             text-decoration: none;
             color: #666666;
             font-size: 14px;
+            padding: 10px 5px;
+            &:hover{
+                color: #000000;
+            }
         }
     }
 
@@ -901,4 +941,5 @@ header {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: #666666;
+    padding: 10px 0px;
 }
