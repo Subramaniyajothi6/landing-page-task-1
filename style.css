@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #FEFCFB;
-    
+
 }
 
 .container {
@@ -32,9 +32,10 @@ header {
     font-weight: bold;
     gap: 5px;
     padding: 10px 0px;
-    a{
+
+    a {
         text-decoration: none;
-         color: black;
+        color: black;
     }
 }
 
@@ -77,9 +78,6 @@ header {
     font-weight: 500;
     padding: 7px 20px;
     transition: all 0.3s ease-in-out;
-
-
-
 }
 
 .login {
@@ -101,7 +99,9 @@ header {
         color: rgb(240, 234, 234);
     }
 }
-
+#menu{
+    display: none;
+}
 /*------------------------------------------- media query of header ---------------------------------------------------- */
 
 @media (max-width:320px) {
@@ -109,18 +109,22 @@ header {
     .brand {
         font-size: 20px;
         font-weight: bold;
+        margin: 0px 10px;
     }
 
     .nav-item {
         display: none;
     }
 
+    .login,
+    .signup {
+        display: none;
+    }
+    #menu{
+        margin: 0px 10px ;
+    }
+
 }
-
-
-
-
-
 /* ------------------------------------------------------- hero ---------------------------------------------------------  */
 
 .hero-top {
@@ -157,6 +161,7 @@ header {
     font-size: 18px;
     padding: 10px 20px;
     transition: all 0.3s ease-in-out;
+    margin: 10px 0px;
 
     &:hover {
         background-color: #FA7436;
@@ -171,6 +176,12 @@ header {
     font-family: "Poppins", sans-serif;
     width: 60%;
     position: relative;
+    margin: 20px auto;
+    /* border: #000000 solid 1px; */
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 
@@ -204,6 +215,7 @@ header {
 
 .material-symbols-outlined {
     color: #FA7436;
+
 }
 
 .hero {
@@ -212,6 +224,7 @@ header {
     align-items: center;
     gap: 20px;
     background-color: #FEFCFB;
+    padding: 10px 0px 50px;
 }
 
 
@@ -433,9 +446,18 @@ header {
     color: #FA7436;
 }
 
-#location_on {
-    color: #FA7436;
+.location_on {
+    color: #999999;
+    font-size: 10px;
 }
+
+#london,
+#rome,
+#Firenze,
+#madrid {
+    font-size: 17px;
+}
+
 
 .dis-btm-ctn-right {
     display: flex;
@@ -464,11 +486,13 @@ header {
 
 
 
+
+
 /* -------------------------------------------- media query of exclusive offers -------------------------------------------- */
 
 
 
-/* -------------------------------------------- media query of vacation plan   -------------------------------------------- */
+/* ---------------------------------------------------  vacation plan  ------------------------------------------------- */
 
 
 .vp-top {
@@ -587,6 +611,26 @@ header {
     width: 1000px;
 }
 
+/* -------------------------------------------------- media query of vacation plan ------------------------------------- */
+
+@media screen and (max-width: 360px) {
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------- about us -------------------------------------------------------- */
+
 .about-us {
     display: flex;
     background-color: #F7F8FC;
@@ -636,14 +680,15 @@ header {
         padding: 15px 10px;
         border-radius: 10px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-        .about-us-right-element{
+
+        .about-us-right-element {
             position: absolute;
             bottom: 150px;
             left: 250px;
             z-index: 11;
         }
 
-        .about-us-right-profile{
+        .about-us-right-profile {
             position: absolute;
             bottom: 160px;
             right: 320px;
@@ -664,7 +709,7 @@ header {
             line-height: 32px;
             text-align: left;
             width: 350px;
-            
+
         }
 
         .about-us-right-p2 {
@@ -685,7 +730,7 @@ header {
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         position: absolute;
         top: 45px;
-        right:180px;
+        right: 180px;
 
 
     }
@@ -760,19 +805,22 @@ header {
 
 /* --------------------------------------------------subscribe----------------------------------------------------------- */
 
-.subcribe{
+.subcribe {
     position: relative;
     padding: 20px;
 }
 
-.subcribe-img1 , .subcribe-img2{
+.subcribe-img1,
+.subcribe-img2 {
     position: absolute;
 }
-.subcribe-img1{
+
+.subcribe-img1 {
     left: 250px;
     top: 65px;
 }
-.subcribe-img2{
+
+.subcribe-img2 {
     right: 255px;
     top: 25px;
 }
@@ -784,7 +832,7 @@ header {
     flex-direction: column;
     border-radius: 10px;
     width: 700px;
-    padding: 50px 100px ;
+    padding: 50px 100px;
 
     h1 {
         color: white;
@@ -802,7 +850,7 @@ header {
         cursor: pointer;
         font-family: "Poppins", sans-serif;
         position: absolute;
-        left: 80.5%;
+        right: 4px;
         top: 3.5px;
         padding: 5px 10px;
 
@@ -871,14 +919,16 @@ header {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     height: 40px;
     width: 40px;
-    
+
 }
 
-.facebook:hover,.twitter:hover,.instagram:hover{
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
     cursor: pointer;
     background-color: #FA7436;
     fill: white;
-    
+
 }
 
 .social {
@@ -922,7 +972,8 @@ header {
             color: #666666;
             font-size: 14px;
             padding: 10px 5px;
-            &:hover{
+
+            &:hover {
                 color: #000000;
             }
         }
