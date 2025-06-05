@@ -32,6 +32,7 @@ header {
     font-weight: bold;
     gap: 5px;
     padding: 10px 0px;
+    margin: 0px 12px;
 
     a {
         text-decoration: none;
@@ -42,8 +43,6 @@ header {
 .nav-list {
     display: flex;
     gap: 10px;
-
-
 }
 
 .nav-item {
@@ -55,7 +54,6 @@ header {
     a {
         text-decoration: none;
         color: #222222;
-        /* border: solid 1px #222222; */
         padding: 5px 8px;
         border-radius: 5px;
         transition: all 0.3s ease-in-out;
@@ -99,17 +97,65 @@ header {
         color: rgb(240, 234, 234);
     }
 }
-#menu{
+
+#menu {
     display: none;
 }
+
+.signup-login {
+    margin: 0px 12px;
+}
+
 /*------------------------------------------- media query of header ---------------------------------------------------- */
 
-@media (max-width:320px) {
-
+@media (max-width:1024px) {
     .brand {
         font-size: 20px;
         font-weight: bold;
+
+        img {
+            width: 18px;
+        }
+    }
+
+    .login,
+    .signup {
+        font-size: 16px;
+        padding: 4px 16px;
+
+    }
+
+
+
+    .nav-item {
+        font-size: 16px;
+
+
+        a {
+            text-decoration: none;
+            color: #222222;
+            padding: 5px 8px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+    }
+
+
+}
+
+
+
+@media (max-width:768px) {
+    .brand {
+        font-size: 18px;
+        font-weight: bold;
         margin: 0px 10px;
+
+        img {
+            width: 16px;
+        }
     }
 
     .nav-item {
@@ -120,12 +166,36 @@ header {
     .signup {
         display: none;
     }
-    #menu{
-        margin: 0px 10px ;
+
+    #menu {
+        margin: 0px 10px;
         display: block;
     }
 
 }
+
+@media (max-width:320px) {
+
+    .brand {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0px 5px;
+
+        img {
+            width: 14px;
+        }
+    }
+
+    #menu {
+        margin: 0px 5px;
+        display: block;
+    }
+
+}
+
+
+
+
 /* ------------------------------------------------------- hero ---------------------------------------------------------  */
 
 .hero-top {
@@ -141,6 +211,7 @@ header {
         font-family: "Volkhov", serif;
         font-size: 60px;
         font-weight: bold;
+        margin: 10px 3px;
     }
 
     p {
@@ -162,7 +233,7 @@ header {
     font-size: 18px;
     padding: 10px 20px;
     transition: all 0.3s ease-in-out;
-    margin: 10px 0px;
+    margin: 10px 5px;
 
     &:hover {
         background-color: #FA7436;
@@ -175,12 +246,10 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    align-items: flex-start;
     width: 60%;
-    position: relative;
-    margin: 20px auto;
-    /* border: #000000 solid 1px; */
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -231,6 +300,206 @@ header {
 
 /* ------------------------------------------- media query of hero ---------------------------------------------------- */
 
+@media (max-width: 1200px) {
+    .hero-left {
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            margin: 15px 5px;
+            font-size: 14px;
+        }
+    }
+
+    .hero-right {
+        img {
+            width: 600px;
+
+        }
+    }
+
+
+
+    .scroll {
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+
+    .para {
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .explore {
+        padding: 10px 20px;
+        margin: 10px 0px;
+    }
+
+    .discover-now {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    .hero-left {
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            margin: 15px 5px;
+            font-size: 14px;
+        }
+    }
+
+    .hero-right {
+        img {
+            width: 500px;
+
+        }
+    }
+
+    .hero-bottom {
+        width: 600px;
+        padding: 10px 20px;
+
+    }
+
+    .scroll {
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+
+    .para {
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .explore {
+        padding: 10px 20px;
+        margin: 10px 0px;
+    }
+
+    .discover-now {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .container {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 860px) {
+
+    .hero-top {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+
+    }
+
+    .hero-left {
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            margin: 15px 5px;
+            font-size: 12px;
+        }
+    }
+
+    .hero-right {
+        img {
+            width: 500px;
+
+        }
+    }
+
+    .hero-bottom {
+        width: 50%;
+        padding: 5px 10px;
+
+    }
+
+    .scroll {
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    .explore {
+        padding: 5px 10px;
+        margin: 10px 5px;
+    }
+
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .hero-right {
+        img {
+            width: 400px;
+
+        }
+    }
+
+    .hero-bottom {
+        flex-direction: column;
+        padding: 10px 20px;
+
+
+    }
+
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .hero-left {
+        h1 {
+            font-size: 30px;
+        }
+
+
+    }
+
+    .hero-right {
+        img {
+            width: 320px;
+
+        }
+    }
+}
+
+
+
 
 @media screen and (max-width: 320px) {
     .hero-top {
@@ -264,6 +533,37 @@ header {
         padding: 10px 20px;
     }
 
+    .hero-bottom {
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+
+    .scroll {
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+
+
+    .explore {
+        background-color: #FA7436;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px 0px;
+    }
+
+    .discover-now {
+        font-size: 14px;
+        margin: 10px 5px;
+    }
+
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
 }
 
 
@@ -291,7 +591,6 @@ header {
     display: flex;
     gap: 20px;
     line-height: 54px;
-    align-items: center;
     position: relative;
     margin: 50px 0px;
 
@@ -332,6 +631,7 @@ header {
 .tyntd-h1 {
     font-family: "Volkhov", serif;
     font-size: 48px;
+    text-align: center;
 }
 
 .to-do {
@@ -345,10 +645,85 @@ header {
     font-size: 18px;
     line-height: 32px;
     text-align: center;
-    width: 500px;
+    /* width: 500px; */
 }
 
 /* ------------------------------------- media query of things you need to do -------------------------------------------- */
+@media (max-width: 1200px) {
+    .tyntd-top-right {
+        img {
+            right: 30px;
+            bottom: 70px;
+        }
+    }
+
+}
+
+@media (max-width: 860px) {
+    .tyntd-top-right {
+        img {
+            right: 10px;
+            bottom: 70px;
+        }
+    }
+
+    .tyntd-h1 {
+        font-size: 45px;
+    }
+
+    .tyntd-p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 715px) {
+    .tyntd-bottom {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .tyntd-top-right {
+        img {
+            width: 80px;
+            bottom: 100px;
+        }
+    }
+
+
+}
+
+@media (max-width: 660px) {
+
+    .tyntd-top-right {
+        img {
+            right: -10px;
+            bottom: 40px;
+        }
+    }
+
+    .tyntd-h1 {
+        font-size: 40px;
+    }
+
+    .tyntd-p {
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .tyntd-top-right {
+        img {
+            display: none;
+        }
+    }
+
+}
+
 
 @media screen and (max-width: 320px) {
     .tyntd-h1 {
@@ -370,6 +745,8 @@ header {
 
 }
 
+
+
 /* -------------------------------------------------- exclusive offers --------------------------------------------------- */
 .exclusive {
     display: flex;
@@ -380,6 +757,7 @@ header {
     h1 {
         font-family: "Volkhov", serif;
         font-size: 48px;
+        text-align: center;
 
     }
 
@@ -393,7 +771,6 @@ header {
         font-size: 18px;
         line-height: 32px;
         text-align: center;
-        width: 500px;
     }
 }
 
@@ -491,21 +868,72 @@ header {
 
 /* -------------------------------------------- media query of exclusive offers -------------------------------------------- */
 
+@media (max-width: 1200px) {
+    .exclusive {
+
+        h1 {
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .dis-cards {
+        h4 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .deals-discounts {
+        padding: 30px 10px 50px;
+    }
+
+}
+
+.location_on {
+    font-size: 10px;
+}
+
+#london,
+#rome,
+#Firenze,
+#madrid {
+    font-size: 17px;
+}
+
+.arrow {
+    padding: 10px;
+    margin: 10px;
+}
+
+.arrows {
+    padding: 20px;
+}
+
+
+
 
 
 /* ---------------------------------------------------  vacation plan  ------------------------------------------------- */
 
-
 .vp-top {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
+    /* justify-content: center; */
     position: relative;
 }
 
 .vp-top-right {
     position: absolute;
-    left: 470px;
+    /* left: 50%; */
+    right: 5%;
 }
 
 .vp-top-left {
@@ -521,7 +949,7 @@ header {
         font-size: 16px;
         line-height: 32px;
         text-align: center;
-        width: 500px;
+        /* width: 500px; */
         padding: 10px 0px 20px;
     }
 
@@ -531,16 +959,18 @@ header {
     color: #FA7436;
 }
 
+.vacation-btm {
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 220px;
-
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 20px;
-
-
 
     .card-ctn-top {
         display: flex;
@@ -565,7 +995,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* gap: 150px; */
         font-family: "Poppins", sans-serif;
         color: #666666;
 
@@ -586,11 +1015,17 @@ header {
     border-radius: 20px;
 }
 
+.card-img {
+    width: 220px;
+    border-radius: 20px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
 }
 
 .card-ctn {
@@ -605,24 +1040,86 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 30px 0px;
 }
 
-.vacation-btm {
-    width: 1000px;
-}
+
 
 /* -------------------------------------------------- media query of vacation plan ------------------------------------- */
 
-@media screen and (max-width: 360px) {
+@media (max-width: 1200px) {}
+
+@media (max-width: 860px) {
+    .cards {
+        gap: 30px;
+    }
+
+    .vp-top-left {
+        h1 {
+            font-size: 40px;
+            padding: 10px 0px;
+        }
+
+        p {
+            font-size: 16px;
+            padding: 10px 0px 20px;
+        }
+
+    }
+
+}
+
+@media (max-width: 720px) {
+    .cards {
+        gap: 20px;
+        margin: 0px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vp-top-right {
+        right: 70px;
+
+        img {
+            width: 70px;
+        }
+    }
+
+    .vp-top-left {
+        h1 {
+            font-size: 40px;
+            padding: 10px 0px;
+        }
+
+        p {
+            font-size: 16px;
+            padding: 10px 10px 20px;
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    .vp-top-right {
+
+        right: 1px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
 
     .cards {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .vp-top-right {
+        display: none;
+    }
 }
+
 
 
 
@@ -633,6 +1130,7 @@ header {
 /* -------------------------------------------------- about us -------------------------------------------------------- */
 
 .about-us {
+    border: black solid 1px;
     display: flex;
     background-color: #F7F8FC;
     padding: 200px 10px 200px;
@@ -747,6 +1245,52 @@ header {
     color: #666666;
     font-size: 14px;
 }
+
+/* -------------------------------------------------- media query about us -------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+    .about-right-card {
+        right: 200px;
+        bottom: -60px;
+
+        .about-us-right-element {
+            bottom: 150px;
+            left: 250px;
+        }
+
+        .about-us-right-profile {
+            bottom: 160px;
+            right: 320px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        .about-us-right-p1 {
+            font-size: 14px;
+        }
+
+        .about-us-right-p2 {
+            font-size: 14px;
+        }
+    }
+
+    .about-right-card-2 {
+        z-index: 2;
+        width: 350px;
+        background-color: #F7F8FC;
+        padding: 15px 10px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        position: absolute;
+        top: 45px;
+        right: 180px;
+
+
+    }
+}
+
 
 
 /*--------------------------------------------------- blog ----------------------------------------------------------------*/
