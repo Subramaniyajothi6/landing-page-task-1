@@ -1130,7 +1130,6 @@ header {
 /* -------------------------------------------------- about us -------------------------------------------------------- */
 
 .about-us {
-    border: black solid 1px;
     display: flex;
     background-color: #F7F8FC;
     padding: 200px 10px 200px;
@@ -1163,7 +1162,6 @@ header {
         font-family: "Poppins", sans-serif;
         position: relative;
         width: 500px;
-        /* border: black solid 1px; */
 
 
 
